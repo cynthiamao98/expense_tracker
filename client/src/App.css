@@ -1,0 +1,110 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-header {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1200px; /* Adjust this value as needed */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This centers the content vertically */
+  width: 100%;
+  max-width: 1200px; /* Adjust this value as needed */
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+input[type="number"] {
+  font-size: 18px;
+  padding: 10px;
+  width: 60%;
+}
+
+select {
+  font-size: 18px;
+  padding: 10px;
+  width: 35%;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  height: 100%;
+  white-space: nowrap;
+  width: 18%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+button:disabled,
+button.disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.chart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 500px;
+  height: 300px; /* Set a fixed height or use max-height as needed */
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust other element margins as needed */
+h1,
+h2,
+p {
+  margin: 10px 0;
+}
